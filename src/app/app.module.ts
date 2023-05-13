@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { AdminComponent } from './pages/admin/admin.component';
     FooterComponent,
     ProductsComponent,
     AdminComponent,
+    CategoryComponent,
+    NotFoundPageComponent,
 
   ],
   imports: [
