@@ -10,7 +10,14 @@ import { ProductsComponent } from './pages/products/products.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatInputModule } from '@angular/material/input';
 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +29,19 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     AdminComponent,
     CategoryComponent,
     NotFoundPageComponent,
+    SignupComponent,
+    SigninComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
